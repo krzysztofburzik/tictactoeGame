@@ -1,0 +1,10 @@
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.csprojAssemblyReference.cache
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.Form1.resources
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.Properties.Resources.resources
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.csproj.GenerateResource.cache
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.csproj.CoreCompileInputs.cache
+C:\Users\ytraj\source\repos\tictactoeGame\bin\Debug\tictactoeGame.exe.config
+C:\Users\ytraj\source\repos\tictactoeGame\bin\Debug\tictactoeGame.exe
+C:\Users\ytraj\source\repos\tictactoeGame\bin\Debug\tictactoeGame.pdb
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.exe
+C:\Users\ytraj\source\repos\tictactoeGame\obj\Debug\tictactoeGame.pdb

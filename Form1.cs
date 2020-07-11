@@ -16,5 +16,15 @@ namespace tictactoeGame
         {
             InitializeComponent();
         }
+
+        private void playAI(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resetGame(object sender, EventArgs e)
+        {
+
+        }
     }
 }
