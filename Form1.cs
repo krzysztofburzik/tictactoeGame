@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,7 +35,7 @@ namespace tictactoeGame
         {
                 foreach (Control x in this.Controls)
                 {
-                    if (x is Button && x.Tag == "play")
+                    if (x is Button && x.Text == "?" && x.Enabled)
                     {
                         x.Enabled = false;
                         currentPlayer = Player.O;
@@ -85,8 +86,54 @@ namespace tictactoeGame
             AITIMER.Start();
         }
 
+        private void WON()
+        {
+            foreach (Control x in this.Controls)
+            {
+
+
+                if (x is Button && x.Tag == "play")
+                {
+                    ((Button)x).Enabled = false;
+                    ((Button)x).BackColor = default(Color);
+                        }
+            }
+        }
+
         private void Check()
         {
+            if (
+                button1.Text == "X" && button2.Text == "X" && button3.Text == "X" ||
+                button4.Text == "X" && button5.Text == "X" && button6.Text == "X" ||
+                button7.Text == "X" && button8.Text == "X" && button9.Text == "X" ||
+                button1.Text == "X" && button4.Text == "X" && button7.Text == "X" ||
+                button2.Text == "X" && button5.Text == "X" && button8.Text == "X" ||
+                button3.Text == "X" && button6.Text == "X" && button9.Text == "X" ||
+                button1.Text == "X" && button5.Text == "X" && button9.Text == "X" ||
+                button3.Text == "X" && button5.Text == "X" && button7.Text == "X"
+                )
+            {
+                WON();
+                label1.Text = "X Wygrywa!";
+            }
+            else if
+                (button1.Text == "O" && button2.Text == "O" && button3.Text == "O" ||
+                button4.Text == "O" && button5.Text == "O" && button6.Text == "O" ||
+                button7.Text == "O" && button8.Text == "O" && button9.Text == "O" ||
+                button1.Text == "O" && button4.Text == "O" && button7.Text == "O" ||
+                button2.Text == "O" && button5.Text == "O" && button8.Text == "O" ||
+                button3.Text == "O" && button6.Text == "O" && button9.Text == "O" ||
+                button1.Text == "O" && button5.Text == "O" && button9.Text == "O" ||
+                button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
+            {
+                WON();
+                label1.Text = "O Wygrywa!";
+            }
+            {
+        
+        }
+
+
 
         }
     }
